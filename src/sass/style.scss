@@ -8,7 +8,24 @@
 
 
 .title {
-  margin: 8rem 0 4rem;
+  margin: 6rem auto 3rem;
+  border-bottom: 1px $transparent solid;
+  padding-bottom: .5rem;
+  width: 27rem;
+  @extend .transition;
+  &:focus, &:empty {
+    outline: 0;
+    border-bottom: 1px $light-gray solid;
+    @extend .transition;
+  }
+}
+
+.title[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: $light-gray;
+    text-align: center;
+    cursor: text;
+    @extend .transition;
 }
 
 
@@ -17,8 +34,8 @@
 .search-wrapper {
   position: relative;
   margin: 0 auto;
-  transition: all .3s ease;
-  width: 21rem;
+  @extend .transition;
+  width: 27rem;
   cursor: pointer;
   &:before {
     content:url('/img/icon-search.svg');
@@ -28,7 +45,7 @@
     width: 2rem;
     left: 50%;
     margin-left: -2rem;
-    top: -1.5rem;
+    top: -1.25rem;
     transition: all 1s ease;
   }
 }
@@ -40,19 +57,20 @@
 }
 
 .search-box {
+  border-radius: 1px;
   outline: 0;
   color: $gray;
   background: $lighter-gray;
-  font-family: $sans;
-  font-size: 1rem;
+  font-family: $serif;
+  font-size: .75rem;
   height: 0;
   padding: 0;
   border: 1px solid $light-gray;
   width: 100%;
   text-align: center;
-  transition: height .3s, transform .3s ease;
+  @extend .transition;
   &::placeholder {
-    transition: all .3s ease;
+    @extend .transition;
     color: $light-gray;
     opacity: 0;
   }
@@ -71,16 +89,17 @@
 
 .book-grid {
   margin: 2rem auto 8rem;
-  width: 72rem;
+  @include clearfix;
 }
 
 .book-grid-item {
+  border-radius: 2px;
   float: left;
   width: 15rem;
-  margin: 1.5rem;
+  margin: .5rem .5rem;
   padding: 2rem 2rem 1.5rem;
   box-sizing: border-box;
-  transition: all .3s ease;
+  @extend .transition;
   &:hover {
     background: $white;
     .book-cover {
@@ -90,21 +109,23 @@
 }
 
 .book-cover {
-  transition: all .3s ease;
-  transform: scale(.818181818);
+  @extend .transition;
+  transform: scale(.909090909);
   width: 11rem;
+  height: 16.5rem;
   margin: 0 auto;
+  border-radius: 1px;
+  display: block;
 }
 
 .book-title {
   font-family: $serif;
   font-style: italic;
-  margin-top: 1rem;
-  margin-bottom: .5rem;
+  margin: 1rem -.5rem .5rem;
 }
 
 .book-byline {
-  transition: all .3s ease;
+  @extend .transition;
   font-size: .75rem;
   color: $medium-gray;
 }
