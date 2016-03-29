@@ -1,0 +1,114 @@
+@import 'lib/reset.min';
+@import 'media_queries';
+@import 'colors';
+@import 'typography';
+@import 'base';
+@import 'layout';
+@import 'responsive';
+
+
+.title {
+  margin: 8rem 0 4rem;
+}
+
+
+// SEARCH
+
+.search-wrapper {
+  position: relative;
+  margin: 0 auto;
+  transition: all .3s ease;
+  width: 21rem;
+  cursor: pointer;
+  &:before {
+    content:url('/img/icon-search.svg');
+    padding: 1rem;
+    background: $lighter-gray;
+    position: absolute;
+    width: 2rem;
+    left: 50%;
+    margin-left: -2rem;
+    top: -1.5rem;
+    transition: all 1s ease;
+  }
+}
+
+.search-wrapper-open {
+  &:before {
+    transform: scale(0);
+  }
+}
+
+.search-box {
+  outline: 0;
+  color: $gray;
+  background: $lighter-gray;
+  font-family: $sans;
+  font-size: 1rem;
+  height: 0;
+  padding: 0;
+  border: 1px solid $light-gray;
+  width: 100%;
+  text-align: center;
+  transition: height .3s, transform .3s ease;
+  &::placeholder {
+    transition: all .3s ease;
+    color: $light-gray;
+    opacity: 0;
+  }
+}
+
+.search-box-open {
+  height: 3rem;
+  transform: translateY(-1.5rem);
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+
+// BOOK
+
+.book-grid {
+  margin: 2rem auto 8rem;
+  width: 72rem;
+}
+
+.book-grid-item {
+  float: left;
+  width: 15rem;
+  margin: 1.5rem;
+  padding: 2rem 2rem 1.5rem;
+  box-sizing: border-box;
+  transition: all .3s ease;
+  &:hover {
+    background: $white;
+    .book-cover {
+      transform: scale(1);
+    }
+  }
+}
+
+.book-cover {
+  transition: all .3s ease;
+  transform: scale(.818181818);
+  width: 11rem;
+  margin: 0 auto;
+}
+
+.book-title {
+  font-family: $serif;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.book-byline {
+  transition: all .3s ease;
+  font-size: .75rem;
+  color: $medium-gray;
+}
+
+.book-byline-by {
+  color: $light-gray;
+}

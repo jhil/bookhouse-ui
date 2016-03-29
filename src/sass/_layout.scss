@@ -1,0 +1,11 @@
+@media screen and (max-width: $phone-landscape-max) {
+  .content {
+    padding: 0;
+    width: 100%;
+  }
+
+  section {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
