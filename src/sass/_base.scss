@@ -30,3 +30,10 @@ img {
 .transition {
   transition: all .3s ease;
 }
+
+button, .button {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  display: inline-block;
+}

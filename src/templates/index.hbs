@@ -5,144 +5,32 @@
 
 <h1 class="title" contenteditable="true" placeholder="Name your collection...">Startup Shell Library</h1>
 
-<div class="search-wrapper">
-  <input class="search-box" type="text" placeholder="Search...">
+<div class="input-wrapper">
+  <input class="input-box" type="text" placeholder="Search...">
 </div>
 
 <ul class="book-grid">
 
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
+  {{#each books}}
+  <a target="_blank" href="{{ this.url }}">
     <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/creativityinc.jpg">
-      <h2 class="book-title">Creativity, Inc.</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Ed Catmull</p>
+      <img class="book-cover" src="{{ this.img }}">
+      <h2 class="book-title">{{ this.title }}</h2>
+      <p class="book-byline"><span class="book-byline-by">by </span>{{ this.author }}</p>
     </li>
   </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/fountainhead.jpg">
-      <h2 class="book-title">The Fountainhead</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Ayn Rand</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/siteless.jpg">
-      <h2 class="book-title">Siteless</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>François Blanciak</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/thingscomeapart.jpg">
-      <h2 class="book-title">Things Come Apart</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Todd McLellan</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/frindle.jpg">
-      <h2 class="book-title">Frindle</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Andrew Clements</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/moonwalkingwitheinstein.jpg">
-      <h2 class="book-title">Moonwalking With Einstein</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Joshua Foer</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/madetostick.jpg">
-      <h2 class="book-title">Made To Stick</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Chip Heath, Dan Heath</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/scientificrevolutions.jpg">
-      <h2 class="book-title">The Structure of Scientific Revolutions</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Thomas S. Kuhn</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/creativityinc.jpg">
-      <h2 class="book-title">Creativity, Inc.</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Ed Catmull</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/fountainhead.jpg">
-      <h2 class="book-title">The Fountainhead</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Ayn Rand</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/siteless.jpg">
-      <h2 class="book-title">Siteless</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>François Blanciak</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/thingscomeapart.jpg">
-      <h2 class="book-title">Things Come Apart</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Todd McLellan</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/frindle.jpg">
-      <h2 class="book-title">Frindle</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Andrew Clements</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/moonwalkingwitheinstein.jpg">
-      <h2 class="book-title">Moonwalking With Einstein</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Joshua Foer</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/madetostick.jpg">
-      <h2 class="book-title">Made To Stick</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Chip Heath, Dan Heath</p>
-    </li>
-  </a>
-
-  <a href="http://amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012" target="_blank">
-    <li class="book-grid-item">
-      <img class="book-cover" src="/img/books/scientificrevolutions.jpg">
-      <h2 class="book-title">The Structure of Scientific Revolutions</h2>
-      <p class="book-byline"><span class="book-byline-by">by </span>Thomas S. Kuhn</p>
-    </li>
-  </a>
+  {{/each}}
 
 </ul>
 
+<div class="input-wrapper">
+  <input class="input-box" type="text" placeholder="Add Book...">
+</div>
+
 <footer>
-  <p>Created by Jeff and Jackson</p>
+  <p>&copy; Bookhouse</p>
+  <a href="#"><div class="button">Create Collection</div></a>
+  <p>by Jeff and Jackson</p>
 </footer>
 
 

@@ -1,10 +1,10 @@
-$(".search-wrapper").click(function() {
-  $(".search-box").focus();
-  $(".search-box").addClass('search-box-open');
-  $(this).addClass('search-wrapper-open');
+$(".input-wrapper").click(function() {
+  $(".input-box").focus();
+  $(".input-box").addClass('input-box-open');
+  $(this).addClass('input-wrapper-open');
 });
 
-$(".search-box").blur(function() {
-  $(this).removeClass('search-box-open');
-  $(".search-wrapper").removeClass('search-wrapper-open');
+$(".input-box").blur(function() {
+  $(this).removeClass('input-box-open');
+  $(".input-wrapper").removeClass('input-wrapper-open');
 });

@@ -31,7 +31,7 @@
 
 // SEARCH
 
-.search-wrapper {
+.input-wrapper {
   position: relative;
   margin: 0 auto;
   @extend .transition;
@@ -50,13 +50,13 @@
   }
 }
 
-.search-wrapper-open {
+.input-wrapper-open {
   &:before {
     transform: scale(0);
   }
 }
 
-.search-box {
+.input-box {
   border-radius: 1px;
   outline: 0;
   color: $gray;
@@ -76,7 +76,7 @@
   }
 }
 
-.search-box-open {
+.input-box-open {
   height: 3rem;
   transform: translateY(-1.5rem);
   &::placeholder {
@@ -133,3 +133,16 @@
 .book-byline-by {
   color: $light-gray;
 }
+
+
+// FOOTER
+
+footer {
+  margin: 8rem 0;
+}
+
+footer > {
+  float: left;
+}
+
+
